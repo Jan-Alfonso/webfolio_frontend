@@ -1,7 +1,9 @@
 import React, { useEffect, useState} from "react";
 import { BrowserRouter } from "react-router-dom";
 import Loader from "./components/Loader/Loader";
-import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import "./App.css";
+
 
 function App() {
 
@@ -12,7 +14,7 @@ function App() {
     setScreenLoading(true);
     setTimeout(() => {
       setScreenLoading(false);
-    }, 4000);
+    }, 1000);
   }, []);
 
 
@@ -23,12 +25,13 @@ function App() {
       ) : (
         <BrowserRouter>
           <>
-            <Header />
+            <Home />
           </>
         </BrowserRouter>
       )}
     </>
   );
 }
+
 
 export default App;
