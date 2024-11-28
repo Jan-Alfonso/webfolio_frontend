@@ -1,12 +1,18 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import "./Header.css";
 import janLogo from "../images/jan-logo.png";
+import displayPicture from "../images/face-min.png";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
+  };
+
+  const closeMenu = () => {
+    setMenuActive(false);
   };
 
   const [logoActive, setLogoActive] = useState(false);
@@ -21,14 +27,20 @@ const Header = () => {
 
       <div 
         className={`off-screen-logo ${logoActive ? "active" : ""}`}>
-        janmeriss
+        <img className="display-picture" src={displayPicture} alt="displayPicture" />
+        <div className="name">
+          Jan Meriss Alfonso
+        </div>
+        <div className="title">
+          Full-Stack Developer and Graphic Designer
+        </div>
       </div>
 
       <div className={`off-screen-menu ${menuActive ? "active" : ""}`}>
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#contact">contact</a></li>
+        <ul className="links">
+          <li><Link to="/" onClick={closeMenu}>home</Link></li>
+          <li><Link to="/about" onClick={closeMenu}>about</Link></li>
+          <li><Link to="/projects" onClick={closeMenu}>projects</Link></li>
         </ul>
       </div>
 

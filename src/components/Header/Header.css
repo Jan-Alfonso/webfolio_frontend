@@ -27,16 +27,32 @@ body {
 }
 
 /* Link styles */
-a {
-  color: #F28500;
+
+li {
+  padding: 15px 0 15px 0;
 }
 
-a:visited {
+.display-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: white;
+}
+
+.links a{
+  color: #F28500;
+  margin-bottom: 50px;
+}
+
+
+.links a:visited {
   color: white;
 }
 
-a:hover {
+.links a:hover {
   color: #F28500;
+  transition: .7s ease;
 }
 
 /* Off-screen menu */
@@ -67,23 +83,35 @@ a:hover {
   background-color: #2e2e2e;
   height: 100vh;
   width: 100%;
-  max-width: 450px;
+  padding: 50px;
+  max-width: 400px;
   position: fixed;
   top: 0;
   left: -450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  font-size: 3rem;
   transition: 1s ease;
+}
+
+.name {
+  padding: 15px 0 7px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.title {
+  font-size: .9rem;
+  padding: 0px 0px 0px 0px;
+  color: #F28500;
 }
 
 .off-screen-logo.active {
   left: 0;
   display: flex;
-  box-shadow: 0 0px 300px rgb(0 0 0 / .7);
+  box-shadow: 0 0px 300px rgb(0 0 0 / 1);
 }
 
 /* Main logo styles */
@@ -97,11 +125,14 @@ a:hover {
   margin-right: auto;
   position: relative;
   cursor: pointer;
+  rotate: 0deg;
+  transition: 1s ease;
 }
 
 .logo.active {
   background-color: white;
   transition: 1s ease;
+  rotate: -360deg;
 }
 
 /* Navbar styles for sticky */
@@ -120,6 +151,10 @@ a:hover {
   margin-left: auto;
   position: relative;
   cursor: pointer;
+}
+.ham-menu:hover{
+  color: white;
+  transition: .7s ease;
 }
 
 .ham-menu span {
