@@ -1,0 +1,24 @@
+body {
+    font-family: poppins;
+}
+
+.display-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: white;
+  }
+
+.my-name {
+    padding: 15px 0 7px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+.title {
+    font-size: .7rem;
+    padding: 0px 0px 0px 0px;
+    color: #F28500;
+  }

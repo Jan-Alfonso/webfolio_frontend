@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import Resume from "../Resume/Resume";
 import "./Header.css";
 import janLogo from "../images/jan-logo.png";
-import displayPicture from "../images/face-min.png";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -27,13 +27,7 @@ const Header = () => {
 
       <div 
         className={`off-screen-logo ${logoActive ? "active" : ""}`}>
-        <img className="display-picture" src={displayPicture} alt="displayPicture" />
-        <div className="name">
-          Jan Meriss Alfonso
-        </div>
-        <div className="title">
-          Full-Stack Developer and Graphic Designer
-        </div>
+        <Resume/>
       </div>
 
       <div className={`off-screen-menu ${menuActive ? "active" : ""}`}>

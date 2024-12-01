@@ -16,6 +16,7 @@ body {
 }
 
 /* Styling for logo */
+
 .jan-logo {
   color: white;
   font-family: poppins;
@@ -30,14 +31,6 @@ body {
 
 li {
   padding: 15px 0 15px 0;
-}
-
-.display-picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid black;
-  background-color: white;
 }
 
 .links a{
@@ -95,18 +88,6 @@ li {
   transition: 1s ease;
 }
 
-.name {
-  padding: 15px 0 7px 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: white;
-}
-
-.title {
-  font-size: .9rem;
-  padding: 0px 0px 0px 0px;
-  color: #F28500;
-}
 
 .off-screen-logo.active {
   left: 0;
