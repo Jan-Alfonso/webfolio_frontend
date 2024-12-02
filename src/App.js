@@ -3,7 +3,7 @@ import { Route, Routes, HashRouter } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Loader from "./components/Loader/Loader";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
+// import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import "./App.css";
 
@@ -27,12 +27,12 @@ function App() {
         <Loader />
       ) : (
         <HashRouter>
-          <div className='sticky'>
+          <div>
           <Header />
           </div>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
-            <Route exact path="/about" element={<About />}></Route>
+            {/* <Route exact path="/about" element={<About />}></Route> */}
             <Route exact path="/projects" element={<Projects />}></Route>
           </Routes>
         </HashRouter>

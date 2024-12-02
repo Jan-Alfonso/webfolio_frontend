@@ -1,0 +1,35 @@
+.progress-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .progress-bar {
+    transform: rotate(-90deg);
+  }
+  
+  .circle-background {
+    fill: none;
+  }
+  
+  .circle-progress {
+    fill: none;
+    stroke: #F28500;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.35s;
+  }
+  
+  .percentage {
+    color: white;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .tech-stack {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
+  }

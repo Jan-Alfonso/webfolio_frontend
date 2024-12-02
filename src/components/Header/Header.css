@@ -6,15 +6,6 @@
   text-decoration: none;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  background-color: #2e2e2e;
-  font-family: sans-serif;
-}
-
 /* Styling for logo */
 
 .jan-logo {
@@ -34,18 +25,18 @@ li {
 }
 
 .links a{
-  color: #F28500;
+  color: white;
   margin-bottom: 50px;
 }
 
 
 .links a:visited {
-  color: white;
+  color: #fff;
 }
 
 .links a:hover {
   color: #F28500;
-  transition: .7s ease;
+  transition: .3s ease;
 }
 
 /* Off-screen menu */
@@ -63,7 +54,7 @@ li {
   justify-content: center;
   text-align: center;
   font-size: 3rem;
-  transition: 1s ease;
+  transition: .7s ease;
 }
 
 .off-screen-menu.active {
@@ -76,8 +67,7 @@ li {
   background-color: #2e2e2e;
   height: 100vh;
   width: 100%;
-  padding: 50px;
-  max-width: 400px;
+  max-width: 450px;
   position: fixed;
   top: 0;
   left: -450px;
@@ -85,7 +75,8 @@ li {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: 1s ease;
+  transition: .7s ease;
+  overflow: visible;
 }
 
 
@@ -103,16 +94,23 @@ li {
   width: 50px;
   background-color: #F28500;
   border-radius: 50%;
-  margin-right: auto;
   position: relative;
   cursor: pointer;
   rotate: 0deg;
-  transition: 1s ease;
+  transition: .7s ease;
+}
+
+.name-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
 }
 
 .logo.active {
   background-color: white;
-  transition: 1s ease;
+  transition: .7s ease;
   rotate: -360deg;
 }
 
@@ -126,10 +124,16 @@ li {
 }
 
 /* Hamburger Menu styles */
+.nav-menu-icon,
+.nav-name-icon {
+  margin: 0px 15px 0px 15px;
+  color: #fff;
+  font-size: 1rem;
+}
+
 .ham-menu {
   height: 50px;
   width: 40px;
-  margin-left: auto;
   position: relative;
   cursor: pointer;
 }

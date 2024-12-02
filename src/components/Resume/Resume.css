@@ -1,5 +1,5 @@
-body {
-    font-family: poppins;
+.resume-container {
+  padding: 70px 5px 70px 5px;
 }
 
 .display-picture {
@@ -10,15 +10,29 @@ body {
     background-color: white;
   }
 
-.my-name {
+.my-name-resume {
     padding: 15px 0 7px 0;
     font-size: 1.5rem;
     font-weight: 600;
     color: white;
   }
-  
+
+
 .title {
-    font-size: .7rem;
+    font-size: 1rem;
     padding: 0px 0px 0px 0px;
     color: #F28500;
   }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+

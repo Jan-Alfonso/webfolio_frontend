@@ -11,32 +11,32 @@ const Projects = () => {
   const images = [
     {
       name: "Stellar Branding",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
+      description: "Stellar Clothing is a small Filipino brand offering a diverse range of stylish, high-quality apparel.",
       image: Stellar,
     },
     {
       name: "Leus Branding",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
+      description: "Leus Beard Oil specializes in organic, hypoallergenic grooming products designed for comfort and care.",
       image: Leus,
     },
     {
       name: "Logo Creation",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
+      description: "Designing unique and impactful logos using Photoshop and Illustrator, tailored to reflect your brand’s identity and vision.",
       image: LogoCreation,
     },
     {
       name: "Shirt Design",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
+      description: "Skilled in creating custom shirt designs with a focus on aesthetics and branding, using Photoshop and Illustrator for high-quality, print-ready results.",
       image: ShirtDesign,
     },
     {
       name: "Vector Art",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
+      description: "Proficient in crafting detailed and scalable vector art exclusively with Illustrator, delivering high-quality, versatile designs for various digital and print applications.",
       image: VectorArt,
     },
     {
       name: "Email Design",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!",
+      description: "Experienced in designing compelling email templates using Photoshop, Illustrator, Figma, and Klaviyo, ensuring visually appealing, responsive, and effective email campaigns.",
       image: EmailDesign,
     },
   ];
@@ -84,10 +84,10 @@ const Projects = () => {
 
       <div className="button">
         <button className="prev" onClick={handlePrev}>
-          prev
+          PREV
         </button>
         <button className="next" onClick={handleNext}>
-          next
+          NEXT
         </button>
       </div>
 

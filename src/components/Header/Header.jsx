@@ -32,9 +32,9 @@ const Header = () => {
 
       <div className={`off-screen-menu ${menuActive ? "active" : ""}`}>
         <ul className="links">
-          <li><Link to="/" onClick={closeMenu}>home</Link></li>
-          <li><Link to="/about" onClick={closeMenu}>about</Link></li>
-          <li><Link to="/projects" onClick={closeMenu}>projects</Link></li>
+          <li><Link to="/" onClick={closeMenu}>HOME</Link></li>
+          <li><Link to="/about" onClick={closeMenu}>ABOUT</Link></li>
+          <li><Link to="/projects" onClick={closeMenu}>PROJECTS</Link></li>
         </ul>
       </div>
 
@@ -42,12 +42,20 @@ const Header = () => {
 
 
       <nav className="navbar">
-        <div
+        <div className="name-logo-container">
+          <div
           className={`logo ${logoActive ? "active" : ""}`}
           onClick={toggleLogo}>
           <img style={{width: '50px', height: '50px'}} src={janLogo} alt="logo" />
         </div>
+        <div className="nav-name-icon">
+        PORTFOLIO
+        </div>
+        </div>
 
+        <div className="nav-menu-icon">
+          MENU
+        </div>
 
         <div
           className={`ham-menu ${menuActive ? "active" : ""}`}
