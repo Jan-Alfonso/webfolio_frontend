@@ -1,35 +1,70 @@
 .progress-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 200px; /* Set a maximum size for large screens */
+  margin: 0 auto;
+}
+
+.progress-bar {
+  transform: rotate(-90deg);
+}
+
+.circle-background {
+  fill: none;
+  stroke: #e0e0e0; /* Background stroke color */
+  stroke-width: 7; /* Adjusted for better visibility */
+}
+
+.circle-progress {
+  fill: none;
+  stroke: #f28500;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.35s;
+}
+
+.percentage {
+  color: white;
+  position: absolute;
+  font-size: calc(.3rem + 0.5vw); /* Responsive font size */
+  font-weight: bold;
+}
+
+.tech-stack {
+  font-size: calc(0.3rem + 0.4vw); /* Responsive font size */
+  font-weight: bold;
+  color: white;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .progress-container {
+    max-width: 150px;
   }
-  
-  .progress-bar {
-    transform: rotate(-90deg);
-  }
-  
-  .circle-background {
-    fill: none;
-  }
-  
-  .circle-progress {
-    fill: none;
-    stroke: #F28500;
-    stroke-linecap: round;
-    transition: stroke-dashoffset 0.35s;
-  }
-  
+
   .percentage {
-    color: white;
-    position: absolute;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: calc(0.8rem + 0.4vw);
   }
-  
+
   .tech-stack {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 25px;
+    font-size: calc(0.8rem + 0.3vw);
   }
+}
+
+@media (max-width: 480px) {
+  .progress-container {
+    max-width: 120px;
+  }
+
+  .percentage {
+    font-size: calc(0.7rem + 0.3vw);
+  }
+
+  .tech-stack {
+    font-size: calc(0.7rem + 0.3vw);
+  }
+}

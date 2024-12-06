@@ -5,7 +5,7 @@ const ReactJsBar = () => {
   const percentage = 80; // You can dynamically change this value
 
   const radius = 30; // Radius of the circle
-  const stroke = 12; // Stroke width
+  const stroke = 7; // Stroke width
   const circumference = 2 * Math.PI * radius; // Circumference of the circle
   const offset = circumference - (percentage / 100) * circumference; // Calculating the offset based on percentage
 
@@ -33,7 +33,7 @@ const ReactJsBar = () => {
       <div className="percentage">{percentage}%</div>
     </div>
     <div className="tech-stack">
-    ReactJS
+    REACT
     </div>
     </>
   );

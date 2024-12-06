@@ -4,9 +4,9 @@ import folioHero from "../images/folio_hero.png";
 
 function Hero() {
   return (
-    <main>
+    <div className='hero-image'>
         <img className='folio-hero' src={folioHero} alt="folio-hero" />
-    </main>
+    </div>
   )
 }
 

@@ -3,32 +3,32 @@
 }
 
 .display-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid black;
-    background-color: white;
-  }
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background-color: white;
+}
 
 .my-name-resume {
-    padding: 15px 0 7px 0;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: white;
-  }
-
+  padding: 15px 0 7px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
 
 .title {
-    font-size: 1rem;
-    padding: 0px 0px 0px 0px;
-    color: #F28500;
-  }
+  font-size: 1rem;
+  padding: 0;
+  color: #F28500;
+}
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 5px;
 }
+
 .grid-item {
   display: flex;
   justify-content: center;
@@ -36,3 +36,10 @@
   flex-direction: column;
 }
 
+
+.scrollable-content {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 10px 0;
+  padding-right: 10px;
+}
