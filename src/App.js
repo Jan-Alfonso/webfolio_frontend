@@ -29,10 +29,12 @@ function App() {
           <div>
             <Header />
           </div>
+          <div className="body-container">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
           </Routes>
+          </div>
         </HashRouter>
       )}
     </>

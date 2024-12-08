@@ -1,7 +1,6 @@
 .carousel-container {
-  position: relative; /* Changed from absolute to relative for better layout behavior */
-  padding: 0 10%;
-  z-index: -10; /* Adjusted to avoid unintended layering issues */
+  position: relative;
+  margin: 15% 0;
 }
 
 .carousel-container img {
@@ -14,7 +13,6 @@
   text-align: center;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .carousel-container {
     padding: 0 5%;

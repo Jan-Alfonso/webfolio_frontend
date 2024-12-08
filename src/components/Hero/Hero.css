@@ -1,14 +1,17 @@
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translate(0, 10px);}
+  100% { opacity: 1; transform: translate(0);}
+}
+
 
 @media only screen and (min-width: 600px) {
 .hero-image {
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
     width: 100%;
-    height: 750px;
-    margin: 0px;
-    z-index: -9999;
+    margin: 15% 0;
+    animation: fadeIn 2s ease-in-out;
 }
 }
 
@@ -16,17 +19,14 @@
 .hero-image {
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
+    margin: 15% 0;
     width: 100%;
-    height: 225px;
-    background-color: 1e1e1e;
-    margin: 0px;
-    z-index: -9999;
+    animation: fadeIn 2s ease-in-out;
 }
 }
 
 .folio-hero {
-    position: absolute;
-    width: 55%;
+    position: relative;
+    width: 100%;
 }

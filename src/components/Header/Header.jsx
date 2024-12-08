@@ -8,7 +8,6 @@ const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
   const [logoActive, setLogoActive] = useState(false);
 
-  // Refs to track the menu and logo elements
   const menuRef = useRef(null);
   const logoRef = useRef(null);
   const hamMenuRef = useRef(null);
@@ -16,14 +15,14 @@ const Header = () => {
 
   const toggleMenu = () => {
     setMenuActive((prev) => {
-      if (!prev) setLogoActive(false); // Close logo menu if opening hamburger menu
+      if (!prev) setLogoActive(false);
       return !prev;
     });
   };
 
   const toggleLogo = () => {
     setLogoActive((prev) => {
-      if (!prev) setMenuActive(false); // Close hamburger menu if opening logo menu
+      if (!prev) setMenuActive(false);
       return !prev;
     });
   };
@@ -33,7 +32,6 @@ const Header = () => {
     setLogoActive(false);
   };
 
-  // Close menus when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -59,7 +57,6 @@ const Header = () => {
 
   return (
     <div className="nav-container">
-      {/* Off-Screen Menu */}
       <div
         className={`off-screen-logo ${logoActive ? "active" : ""}`}
         ref={logoRef}
@@ -90,7 +87,6 @@ const Header = () => {
         </ul>
       </div>
 
-      {/* Hamburger Menu */}
       <nav className="navbar">
         <div className="name-logo-container">
           <div
@@ -107,8 +103,14 @@ const Header = () => {
           <div className="nav-name-icon">PORTFOLIO</div>
         </div>
 
-        <div className="nav-menu-icon">MENU</div>
+        {/* Desktop links */}
+        <div className="desktop-links">
+          <Link to="/">HOME</Link>
+          <Link to="/socials">SOCIALS</Link>
+          <Link to="/contact">CONTACT</Link>
+        </div>
 
+        {/* Hamburger Menu */}
         <div
           className={`ham-menu ${menuActive ? "active" : ""}`}
           onClick={toggleMenu}

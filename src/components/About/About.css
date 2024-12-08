@@ -1,2 +1,44 @@
+.about-grid-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 15% 0;
+}
 
-  
+.about-grid-item {
+    flex: 1 1 calc(50% - 20px); /* Each item takes up 50% width minus gap */
+    max-width: 100%; /* Limit max width to ensure consistency */
+    height: 500px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-grid-content{
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-grid-item {
+        flex: 1 1 100%; /* Each item takes full width */
+        max-width: 100%; /* Ensure no unexpected margins */
+        height: 400px; /* Adjust height for smaller screens */
+    }
+
+    .about-grid-container {
+        height: auto; /* Let the container adapt to the content */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-grid-item {
+        height: 300px; /* Further adjust height for very small screens */
+    }
+}

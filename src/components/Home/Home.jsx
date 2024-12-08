@@ -7,11 +7,9 @@ import Projects from "../Projects/Projects";
 function Home() {
   return (
     <>
-    <main>
       <Hero/>
       <About/>
       <Projects/>
-    </main>
     </>
   );
 }
