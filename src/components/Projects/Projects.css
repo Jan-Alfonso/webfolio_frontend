@@ -1,5 +1,36 @@
 .carousel-container {
-  position: absolute;
-  padding: 0 10% 0 10%;
-  z-index: -9999;
+  position: relative; /* Changed from absolute to relative for better layout behavior */
+  padding: 0 10%;
+  z-index: -10; /* Adjusted to avoid unintended layering issues */
+}
+
+.carousel-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.legend {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 0 5%;
+  }
+
+  .legend {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 0 2%;
+  }
+
+  .legend {
+    font-size: 0.8rem;
+  }
 }
