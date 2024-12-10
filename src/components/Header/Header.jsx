@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import DPName from "../Resume/DPName";
 import Resume from "../Resume/Resume";
 import "./Header.css";
+import Hero from '../Hero/Hero';
 import janLogo from "../images/jan-logo.png";
 
 const Header = () => {
@@ -60,7 +62,8 @@ const Header = () => {
       <div
         className={`off-screen-logo ${logoActive ? "active" : ""}`}
         ref={logoRef}
-      >
+      > 
+        <DPName/>
         <Resume />
       </div>
 
@@ -100,8 +103,11 @@ const Header = () => {
               alt="logo"
             />
           </div>
-          <div className="nav-name-icon">PORTFOLIO</div>
         </div>
+
+        
+        <Hero/>
+          
 
         {/* Desktop links */}
         <div className="desktop-links">

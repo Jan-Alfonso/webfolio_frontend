@@ -57,13 +57,14 @@
   align-items: center;
   text-align: center;
   transition: .7s ease;
-  overflow: visible;
-  z-index: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 0;
 }
 
 .off-screen-logo.active {
   left: 0;
-  box-shadow: 0 0px 300px rgba(0, 0, 0, 1);
+  box-shadow: 10px 0px 70px #000000;
 }
 
 .links a {
@@ -80,11 +81,13 @@
 
 /* Navbar styles */
 .navbar {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   background-color: #2e2e2e;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
 }
 
 .name-logo-container {
@@ -110,12 +113,6 @@
   background-color: white;
   transition: .7s ease;
   rotate: -360deg;
-}
-
-.nav-name-icon {
-  color: white;
-  font-size: 1rem;
-  margin-left: 10px;
 }
 
 /* Desktop links */

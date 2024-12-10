@@ -26,7 +26,7 @@ function App() {
         <Loader fadeOut={fadeOut} /> // Pass fadeOut state as a prop to Loader
       ) : (
         <HashRouter>
-          <div>
+          <div className="header">
             <Header />
           </div>
           <div className="body-container">
