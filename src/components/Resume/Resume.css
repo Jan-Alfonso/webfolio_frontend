@@ -14,13 +14,32 @@
   top: 0;
   width: 100%;
   background-color: #2e2e2e;
-  padding: 50px 0 50px 0;
+  padding: 3% 0 50px 0;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
 }
 
+.download-resume {
+  display: block;
+  background-color: #F28500;
+  border-radius: 15px;
+  font-family: Source Code Pro;
+  font-weight: bold;
+  font-size: .9rem;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+  padding: 5px 25px 5px 25px;
+  border: #fff 1px solid;
+}
+
+.download-resume:hover {
+  box-shadow: 0px 0px 25px rgba(242,133,0, .5);
+  transition: .3s ease-in-out;
+}
+
 .display-picture {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 3px solid #F28500;
   background-color: white;
@@ -41,8 +60,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
+  grid-template-columns: repeat(3, 1fr);
   padding: 5px;
 }
 
@@ -64,6 +82,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: .7rem;
 }
 
 .dp-name {
@@ -74,7 +93,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 10%;
-  margin: 3% 0 3% 0;
+  margin: 1% 0 1% 0;
 }
 
 
@@ -94,10 +113,6 @@
     z-index: -1;
   }
 
-  .grid-container {
-    gap: 5px;
-  }
-
   .grid-item {
     padding: 10px;
   }
@@ -111,7 +126,7 @@
     top: 0;
     width: 100%;
     background-color: #2e2e2e;
-    padding: 50px 10px 50px 10px;
+    padding: 50px 10px 25px 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
   }
 
@@ -120,24 +135,20 @@
     z-index: -1;
   }
 
-  .grid-container {
-    gap: 5px;
-  }
-
   .grid-item {
     padding: 5px;
   }
 
   .display-picture {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 
   .my-name-resume {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .title {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }

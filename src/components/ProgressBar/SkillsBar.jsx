@@ -3,7 +3,8 @@ import "./ProgressBar.css";
 
 const SkillsBar = () => {
   const htmlPercentage = 90;
-  const cssPercentage = 90;
+  const cssPercentage = 85;
+  const bootstrapPercentage = 85;
   const djangoPercentage = 55;
   const mySqlPercentage = 50;
   const wpPercentage = 90;
@@ -13,7 +14,8 @@ const SkillsBar = () => {
   const prPercentage = 50;
   const figPercentage = 90;
   const canvaPercentage = 90;
-  const klaPercentage = 50;
+  const klaPercentage = 60;
+  const phpPercentage = 55;
 
   return (
     <>
@@ -42,12 +44,34 @@ const SkillsBar = () => {
 
         <div className="skills">
         <div className="skill-title">
+            <div className="tech-stack-skills">CSS Bootstrap</div>
+            <div className="percentage-skills">{bootstrapPercentage}%</div>
+        </div>
+        <svg
+          className="progress-bar-skills"
+          width={`${bootstrapPercentage}%`} height="7"
+        ></svg>
+        </div>
+
+        <div className="skills">
+        <div className="skill-title">
             <div className="tech-stack-skills">Django</div>
             <div className="percentage-skills">{djangoPercentage}%</div>
         </div>
         <svg
           className="progress-bar-skills"
           width={`${djangoPercentage}%`} height="7"
+        ></svg>
+        </div>
+
+        <div className="skills">
+        <div className="skill-title">
+            <div className="tech-stack-skills">PHP</div>
+            <div className="percentage-skills">{phpPercentage}%</div>
+        </div>
+        <svg
+          className="progress-bar-skills"
+          width={`${phpPercentage}%`} height="7"
         ></svg>
         </div>
 

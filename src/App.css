@@ -43,6 +43,7 @@
     body {
         background-color: #212121;
         font-family: Source Code Pro;
+        color: #dbdbdb;
         min-height: 100vh;
     }
 
@@ -59,7 +60,7 @@
         /* background: linear-gradient(90deg, rgba(0,0,0,.3) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); */
         width: auto;
         height: 3px;
-        margin: 25px 7%;
+        margin: 15px 7%;
         border-radius: 15px;
     }
 
